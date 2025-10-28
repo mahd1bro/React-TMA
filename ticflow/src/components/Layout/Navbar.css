@@ -1,0 +1,193 @@
+* {
+  font-family: 'Roboto';
+}
+
+.navbar {
+  background: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.navbar-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  height: 150px;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  color: #666;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  display: none;
+}
+
+.menu-toggle:hover {
+  background: #f8f9fa;
+  color: #333;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.ticflow-icon {
+  color: whitesmoke;
+  font-size: 1.5rem;
+  background: #667eea;
+  border-radius: 6px;
+  padding: 1px 6px;
+}
+
+.brand-text {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.navbar-center {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: none;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.nav-item:hover {
+  background: #f8f9fa;
+  color: #333;
+}
+
+.nav-item.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.nav-icon {
+  font-size: 1rem;
+}
+
+.nav-label {
+  font-weight: 500;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #f8f9fa;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.user-icon {
+  color: #667eea;
+  font-size: 0.9rem;
+}
+
+.user-name {
+  font-weight: 500;
+}
+
+.logout-btn {
+  padding: 0.75rem 1rem;
+  background: #f8f9fa;
+  color: #666;
+}
+
+.logout-btn:hover {
+  background: #dc3545;
+  color: white;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .navbar-container {
+    padding: 0 1rem;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-label {
+    display: none;
+  }
+
+  .nav-item {
+    padding: 0.75rem;
+  }
+
+  .user-name {
+    display: none;
+  }
+
+  .user-info {
+    padding: 0.5rem;
+  }
+
+  .brand-text {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-container {
+    padding: 0 0.5rem;
+  }
+
+  .navbar-center {
+    gap: 0.25rem;
+  }
+
+  .nav-item {
+    padding: 0.5rem;
+  }
+
+  .navbar-right {
+    gap: 0.5rem;
+  }
+}
